@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+	</head>
+	<body>
+		<h1>Discord role divider generator</h1>
+		<div id="input-area">
+			<input
+				id="input-box"
+				contenteditable="plaintext-only"
+				placeholder="Role name" />
+			<div
+				id="generatebutton"
+				class="button"
+				onclick="generateText()">
+				Generate
+			</div>
+		</div>
+		<div id="output-area">
+			<input
+				id="output-box"
+				onclick="output.select()"
+				value="" />
+			<div id="width-options">
+				<p>Width:</p>
+				<div id="counter">
+					<div
+						id="minus-button"
+						class="button"
+						onclick="updateCounter(rolewidth-1); generateText()">
+						-
+					</div>
+					<input
+						id="counter-value"
+						type="number"
+						min="0"
+						onchange="updateCounter(parseInt(this.value))" />
+					<div
+						id="plus-button"
+						class="button"
+						onclick="updateCounter(rolewidth+1); generateText()">
+						+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tip">Tip: set the role color to #292B2F for better results</div>
+		<div id="hidden"></div>
+	</body>
+	<script src="index.js"></script>
+</html>
