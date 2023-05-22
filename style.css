@@ -1,0 +1,130 @@
+@font-face {
+	font-family: Whitney;
+	font-weight: 500;
+	src: url('https://api.allorigins.win/raw?url=https://discord.com/assets/cf4a8a10bbdf9b775fad41e0b9921c84.woff2')
+		format('woff2');
+}
+
+body {
+	font-family: 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	background-color: #18191c;
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 500;
+}
+
+p {
+	line-height: 36px;
+	margin: 0;
+}
+
+body > div:not(#tip) {
+	margin: 25px;
+}
+
+input,
+.button {
+	padding: 10px;
+	margin: 1px;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+input {
+	display: inline;
+	font-family: inherit;
+	color: inherit;
+	background-color: #292b2f;
+}
+
+.button {
+	display: inline-block;
+	cursor: pointer;
+	user-select: none;
+}
+
+.button:hover {
+	transition: background 0.17s ease;
+}
+
+div#generatebutton {
+	background-color: #3ba55d;
+}
+
+div#generatebutton:hover {
+	background-color: #2d7d46;
+}
+
+input#input-box,
+input#output-box {
+	width: 300px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+input#output-box {
+	min-width: 350px;
+	text-align: center;
+}
+
+div#width-options {
+	padding: 15px;
+}
+
+div#width-options > p {
+	display: inline;
+}
+
+div#counter {
+	display: inline-flex;
+	height: 32px;
+	padding: 4px;
+}
+
+div#counter > div {
+	flex-shrink: 0;
+	background-color: #292b2f;
+	padding: 4px;
+	width: 16px;
+}
+
+div#counter > div:hover {
+	background-color: #34363c;
+}
+
+div#minus-button {
+	border-radius: 3px 0 0 3px;
+}
+
+div#plus-button {
+	border-radius: 0 3px 3px 0;
+}
+
+div#counter > input {
+	width: 32px;
+	-moz-appearance: textfield;
+	border: none;
+	border-radius: 0;
+}
+
+div#counter > input::-webkit-outer-spin-button,
+div#counter > input::-webkit-inner-spin-button {
+	display: none;
+}
+
+div#hidden {
+	visibility: hidden;
+	position: absolute;
+	overflow: auto;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+div#tip {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	color: #4a4d55;
+}
